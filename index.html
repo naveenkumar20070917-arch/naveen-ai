@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Ai - Futuristic Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Naveen Ai</h1>
+    <p>Futuristic AI Hub - Calculator & Chat</p>
+</header>
+
+<!-- Calculator Section -->
+<section class="calculator">
+    <h2>Scientific Calculator</h2>
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2 (optional)">
+    <select id="operation">
+        <option value="add">Add (+)</option>
+        <option value="sub">Subtract (-)</option>
+        <option value="mul">Multiply (*)</option>
+        <option value="div">Divide (/)</option>
+        <option value="pow">Power (x^y)</option>
+        <option value="sqrt">Square Root</option>
+        <option value="fact">Factorial</option>
+        <option value="sin">Sine</option>
+        <option value="cos">Cosine</option>
+        <option value="tan">Tangent</option>
+    </select>
+    <button onclick="calculate()">Compute</button>
+    <div id="calc-result"></div>
+</section>
+
+<!-- Chat Section -->
+<section class="chat">
+    <h2>Naveen Ai Chat</h2>
+    <div id="chat-container">
+        <div class="ai-message">Hello! I'm Naveen Ai. How can I assist you today?</div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type message...">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="startVoiceRecognition()">🎤</button>
+    </div>
+    <div id="voice-status"></div>
+</section>
+
+<footer>
+    Project by NAVEEN KUMAR P<br>
+    Anna University, BIT Campus, Trichy
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
