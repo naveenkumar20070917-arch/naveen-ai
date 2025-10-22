@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0d0d1a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.calculator, .chat {
+    background: rgba(10, 10, 30, 0.8);
+    border: 2px solid #0ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 10px #0ff;
+}
+
+button {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #ff0, 0 0 30px #0ff;
+    transform: scale(1.05);
+}
+
+#calc-result {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff0;
+    text-shadow: 0 0 5px #ff0;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#chat-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #0ff;
+    padding: 10px;
+    border-radius: 10px;
+    background: #111;
+}
+
+.ai-message {
+    background: #0ff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.user-message {
+    background: #ff0;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    box-shadow: 0 0 10px #ff0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
